@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<Html>
+<title> satyam </title>
+<style>
+#car{
+  babkground-color :  "yellow";
+}
+table{
+  align: "center";
+  padding-left: "10020";
+
+}
+button {
+  background-color: rgb(20,100,20);
+  border: none;
+  color: cyan;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+body{
+  background = "C:\Users\DELL\Pictures\papa\Roads-as-fundamental-right.jpg ";
+}
+</style>
+<head>
+<h2 id ="car" >game</h2>
+
+</head>
+<body>
+<p>
+  <table cellspacing="125">
+    <tr>
+<td><button id="b1" onclick="sd(1)"> 7 </button></td>
+<td><button id="b2" onclick="sd(2)"> 8 </button></td>
+<td><button id="b3" onclick="sd(3)"> 9 </button></td>
+    </tr>
+    <tr>
+    <td><button id="b4" onclick="sd(4)"> 4 </button></td>
+    <td><button id="b5" onclick="sd(5)"> 5 </button></td>
+    <td><button id="b6" onclick="sd(6)"> 6 </button></td>
+    </tr>
+    <tr>
+    <td><button id="b7" onclick="sd(7)"> 1 </button></td>
+    <td><button id="b8" onclick="sd(8)"> 2 </button></td>
+    <td><button id="b9" onclick="sd(9)"> 3 </button></td>
+    </tr>
+    <button id="b10" onclick="sd(10)"> + </button>
+</p>
+</body>
+<script>
+let i = "";
+var d = prompt();
+let  sum = 0;
+let b1 = "";
+function sd(x)
+
+{
+
+
+if(x==1) {
+
+  b1=b1+"7";
+
+  }
+
+
+
+  if(x==2){
+      b1=b1+"8";
+    alert(b1);
+  }
+  if(x==3){
+
+    b1=b1+"9";
+  }
+
+  if(x==4){
+
+    b1=b1+"4";
+  }
+  if(x==5){
+
+    b1=b1+"5";
+  }
+  if(x==6){
+
+    b1=b1+"6";
+  }
+  if(x==7){
+
+    b1=b1+"1";
+  }
+  if(x==8){
+    b1=b1+"2";
+  }
+if(x==9){
+    b1=b1+"3";
+
+  }
+if(x==10){
+
+      i=parseInt(b1);
+      sum = sum+i;
+
+      b1="";
+    }
+
+
+document.getElementById("car").innerHTML= "<marquee>"+sum.toString()+"</marquee>" ;
+}
+
+
+
+</script>
+</html>
